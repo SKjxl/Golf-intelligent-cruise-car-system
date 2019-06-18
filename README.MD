@@ -11,12 +11,13 @@
     随着图像数据量的增大，路径规划的时间将会增加，为了提高路径规划的效率，同时又不影响路径规划的实际效果，对地图进行抽样，降低数据量，从而提高路径规划的效率。  
 4 **基于运动学模型的路径跟踪算法**  
     结合运动学模型设计了一种纯追踪算法。根据路径信息求出路径弯曲度并计算出前视距离。在前视距离的基础下确定目标点，利用运动学模型的运动规律计算出下一个运动动作的车轮转角。该算法无需进行繁琐的参数调试，从而实现对预定义路径的稳定跟踪。  
-上标题
+                                                          上标题
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/1.jpg)
 下标题
 
-背景图片
-
+                                                          上标题
+![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/5.png)
+下标题
 # 框架原理
 本算法主要由四个模块组成，分别为RTK定位模块、GPS测姿模块、路径规划模块和路径跟踪模块。
 图片
