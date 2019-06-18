@@ -2,8 +2,11 @@
 本项目设计了一套专门应用于高尔夫球场的自动导航智能巡航系统，用户在完成预定义路径规划后于高尔夫巡航车上实现自动巡航，该系统通过RTK定位算法获取车辆当前的位置、设计基于基线约束下的姿态测量算法计算车辆航向角信息，并通过通信模块传输车辆当前的状态信息至服务器。结合A* 算法和纯追踪算法分别实现了路径规划、路径跟踪，并在服务器上研发了符合导航系统设计的GUI界面，方便实时地操作规划路径和显示自动导航效果。
 
                                               高尔夫小车
-<div align=center>![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/5.png)
-             
+<div align=center>
+
+![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/5.png)  
+
+<div align=left>             
     
                                                高尔夫球场
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/1.jpg)
