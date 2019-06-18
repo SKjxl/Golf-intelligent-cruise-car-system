@@ -1,8 +1,33 @@
 # 项目简介
+本项目设计了一套专门应用于高尔夫球场的自动导航智能巡航系统，用户在完成预定义路径规划后于高尔夫巡航车上实现自动巡航，该系统通过RTK定位算法获取车辆当前的位置、设计基于基线约束下的姿态测量算法计算车辆航向角信息，并通过通信模块传输车辆当前的状态信息至服务器。结合A* 算法和纯追踪算法分别实现了路径规划、路径跟踪，并在服务器上研发了符合导航系统设计的GUI界面，方便实时地操作规划路径和显示自动导航效果。
+
+
+## 主要工作
+1 优化RTK定位算法
+  以空间强相关性建立差分数学模型，通过卡尔曼滤波算法求解定位和载波相位模糊度的浮点解，然后采用最小二乘模糊度降相关（MLAMBDA）算法来求取载波相位的模糊度，从而实现厘米级的定位精度，提高定位算法的实时性和准确性。
+2 基于基线约束下的姿态测量算法
+    提出一种高精度GPS卫星导航系统姿态测量算法，在单历元情况下，采用伪距辅助载波相位求解，为了消除伪距观测量带来的误差，引入基线长度作为已知量，对整周模糊度求解进行约束，从而实现了精度在1度以内的单历元姿态测量算法。
+3 基于抽样的路径规划算法
+    随着图像数据量的增大，路径规划的时间将会增加，为了提高路径规划的效率，同时又不影响路径规划的实际效果，对地图进行抽样，降低数据量，从而提高路径规划的效率。
+4 基于运动学模型的路径跟踪算法
+    结合运动学模型设计了一种纯追踪算法。根据路径信息求出路径弯曲度并计算出前视距离。在前视距离的基础下确定目标点，利用运动学模型的运动规律计算出下一个运动动作的车轮转角。该算法无需进行繁琐的参数调试，从而实现对预定义路径的稳定跟踪。
+
+
+ 背景图片
 
 # 框架原理
+本算法主要由四个模块组成，分别为RTK定位模块、GPS测姿模块、路径规划模块和路径跟踪模块。
+图片
+
 
 # 实验结果
+RTK测试
+
+姿态测试
+
+路径规划测试
+
+路径跟踪测试
 
 
-This system mainly includes three core contents: positioning and navigation, path planning and path tracking. In the navigation module, RTK high-precision positioning algorithm based on carrier phase difference model is designed on the strong correlation of space. The smooth positioning results are solved by kalman filtering algorithm, and then the ambiguity of carrier phase is obtained by using the least square ambiguity reduction correlation (MLAMBDA) algorithm.Then the centimeter-level positioning is finally achieved. Secondly, GPS dual antennas are used to construct ultra-short baseline. The attitude measurement algorithm based on single frequency, single frequency and ultra-short baseline are designed to achieve accurate attitude measurement and provide stable navigation information for cruise cars. The path planning module adopts the classic A* path planning algorithm to automatically obtain the global optimal path of the golf course by establishing the raster environment model of the golf course and manually inputting the starting and ending points by the user. Path tracking module uses the pure tracing algorithm. Firstly, we calculate the forward apparent distance of the cruise car by planning path information and RTK positioning results. Then we combine GPS attitude measuring information to calculate the deviation of heading angle. Lastly, we make the angle feedback to the control unit, the vehicle's wheels vehicle bottom control module performs wheel Angle information to make the vehicle approaching a predefined path. At the same time, the navigation and positioning results map of real-time display in GUI interface, so that users see in real time.
+
