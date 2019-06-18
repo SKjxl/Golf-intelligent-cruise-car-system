@@ -27,20 +27,21 @@
 
 
 # 实验结果
+
     RTK测试
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/12.png)
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/122.png)
-姿态测试
+  
+  
+    姿态测试
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/14.jpg)
-![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/144.jpg)
-![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/16.jpg)
+
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/15.jpg)
-
-路径规划测试
+  
+     路径规划测试
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/9.png)
-
-
-路径跟踪测试
+  
+    路径跟踪测试  
 ![adssdsdfs](https://github.com/CWORLDY/Golf-intelligent-cruise-car-system/blob/master/document/photo/实地测试.png)
 
 
